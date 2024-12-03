@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Esportes - Notícias 24/7</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+
+    <header>
+        <div class="logo">
+            <h1>Notícias 24/7</h1>
+        </div>
+        <nav id="menu">
+            <ul>
+                <li><a href="vagas.html">Vagas de Emprego</a></li>
+                <li><a href="horoscopo.html">Horóscopo</a></li>
+                <li><a href="tempo.html">Previsão do Tempo</a></li>
+                <li><a href="esportes.html">Esportes</a></li>
+                <li><a href="assinar.html">Assinar o Jornal</a></li>
+            </ul>
+        </nav>
+        <div class="menu-icon" onclick="toggleMenu()">
+            &#9776;
+        </div>
+    </header>
+
+
+    <main>
+        <h2>Notícias Esportivas</h2>
+
+        <div class="categories">
+            <div class="category">
+                <h3>Futebol</h3>
+                <ul>
+                    <li><a href="#">O time X venceu a partida de ontem com grande desempenho</a></li>
+                    <li><a href="#">Jogador Y quebra recorde histórico em campeonato nacional</a></li>
+                    <li><a href="#">Equipe Z se prepara para a final do campeonato internacional</a></li>
+                </ul>
+            </div>
+
+            <div class="category">
+                <h3>Basquete</h3>
+                <ul>
+                    <li><a href="#">Vitória impressionante do time Ayiu contra o time Bis na última rodada</a></li>
+                    <li><a href="#">Jogador Cacu se destaca como MVP da temporada</a></li>
+                    <li><a href="#">Campeonato mundial de basquete: as 10 melhores jogadas até agora</a></li>
+                </ul>
+            </div>
+
+            <div class="category">
+                <h3>Fórmula 1</h3>
+                <ul>
+                    <li><a href="#">Piloto lorival vence Grande Prêmio de Mônaco em uma corrida emocionante</a></li>
+                    <li><a href="#">Equipes da Fórmula 1 se preparam para a próxima temporada</a></li>
+                    <li><a href="#">Análise: O desempenho dos principais pilotos nas últimas corridas</a></li>
+                </ul>
+            </div>
+
+            <div class="category">
+                <h3>Voleibol</h3>
+                <ul>
+                    <li><a href="#">Seleção brasileira de vôlei conquista ouro no campeonato mundial</a></li>
+                    <li><a href="#">Clube Xlolo vence torneio nacional após uma incrível remontada</a></li>
+                    <li><a href="#">Entrevista exclusiva com a capitã da equipe Ylilu após o título conquistado</a></li>
+                </ul>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Notícias 24/7 - Todos os direitos reservados.</p>
+    </footer>
+
+    <script>
+
+        function toggleMenu() {
+            var menu = document.getElementById("menu");
+            menu.classList.toggle("active");
+        }
+    </script>
+
+</body>
+</html>

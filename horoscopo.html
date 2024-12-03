@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Horóscopo - Notícias 24/7</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+
+    <header>
+        <div class="logo">
+            <h1>Notícias 24/7</h1>
+        </div>
+        <nav id="menu">
+            <ul>
+                <li><a href="vagas.html">Vagas de Emprego</a></li>
+                <li><a href="horoscopo.html">Horóscopo</a></li>
+                <li><a href="tempo.html">Previsão do Tempo</a></li>
+                <li><a href="esportes.html">Esportes</a></li>
+                <li><a href="assinar.html">Assinar o Jornal</a></li>
+            </ul>
+        </nav>
+        <div class="menu-icon" onclick="toggleMenu()">
+            &#9776;
+        </div>
+    </header>
+
+    <main>
+        <h2>Horóscopo do Dia</h2>
+
+        <div class="signos-container">
+            <div class="signo">
+                <h3>Áries</h3>
+                <p id="aries">Hoje é um ótimo dia para novos começos. Aproveite para iniciar projetos que estavam pendentes.</p>
+            </div>
+            <div class="signo">
+                <h3>Touro</h3>
+                <p id="touro">Seja mais paciente com as pessoas ao seu redor. O trabalho em equipe será fundamental.</p>
+            </div>
+            <div class="signo">
+                <h3>Gêmeos</h3>
+                <p id="gemeos">Hoje você pode se sentir mais criativo. Aproveite para buscar novas fontes de inspiração.</p>
+            </div>
+            <div class="signo">
+                <h3>Câncer</h3>
+                <p id="cancer">Será um dia propício para resolver questões pessoais. Busque equilíbrio nas suas emoções.</p>
+            </div>
+            <div class="signo">
+                <h3>Leão</h3>
+                <p id="leao">É um bom momento para dar atenção à sua carreira. Seu esforço será reconhecido.</p>
+            </div>
+            <div class="signo">
+                <h3>Virgem</h3>
+                <p id="virgem">Tire um tempo para si mesmo hoje. A introspecção será importante para tomar decisões importantes.</p>
+            </div>
+            <div class="signo">
+                <h3>Libra</h3>
+                <p id="libra">Hoje é um bom dia para resolver pendências financeiras. Organize seus gastos e busque o equilíbrio.</p>
+            </div>
+            <div class="signo">
+                <h3>Escorpião</h3>
+                <p id="escorpiao">Você pode estar mais sensível hoje, mas isso também te ajuda a tomar decisões mais acertadas.</p>
+            </div>
+            <div class="signo">
+                <h3>Sagitário</h3>
+                <p id="sagitario">É um bom dia para explorar novas ideias e filosofias. Expanda seus horizontes mentais.</p>
+            </div>
+            <div class="signo">
+                <h3>Capricórnio</h3>
+                <p id="capricornio">Dia ideal para focar em objetivos de longo prazo. Tenha paciência para conquistar suas metas.</p>
+            </div>
+            <div class="signo">
+                <h3>Aquário</h3>
+                <p id="aquario">As relações interpessoais estarão em destaque. Aproveite para se conectar com os outros de forma genuína.</p>
+            </div>
+            <div class="signo">
+                <h3>Peixes</h3>
+                <p id="peixes">Hoje é um dia ótimo para relaxar e se reconectar com seu lado espiritual. Busque harmonia interna.</p>
+            </div>
+        </div>
+
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Notícias 24/7 - Todos os direitos reservados.</p>
+    </footer>
+
+    <script>
+        
+        function toggleMenu() {
+            var menu = document.getElementById("menu");
+            menu.classList.toggle("active"); 
+        }
+    </script>
+
+</body>
+</html>
+
+                

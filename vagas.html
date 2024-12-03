@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vagas de Emprego - Notícias 24/7</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <div class="logo">
+            <h1>Notícias 24/7</h1>
+        </div>
+        <nav id="menu">
+            <ul>
+                <li><a href="vagas.html">Vagas de Emprego</a></li>
+                <li><a href="horoscopo.html">Horóscopo</a></li>
+                <li><a href="tempo.html">Previsão do Tempo</a></li>
+                <li><a href="esportes.html">Esportes</a></li>
+                <li><a href="assinar.html">Assinar o Jornal</a></li>
+            </ul>
+        </nav>
+        <div class="menu-icon" onclick="toggleMenu()">
+            &#9776;
+        </div>
+    </header>
+
+    <main>
+        <h2>Vagas de Emprego</h2>
+        <ul>
+            <li><strong>Desenvolvedor Web</strong> - Empresa Xlulalivre - Localização: São Paulo</li>
+            <li><strong>Analista de Marketing</strong> - Empresa Yxwz - Localização: Rio de Janeiro</li>
+            <li><strong>Designer Gráfico</strong> - Empresa Zylu - Localização: Curitiba</li>
+        </ul>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Notícias 24/7 - Todos os direitos reservados.</p>
+    </footer>
+
+    <script>
+        function toggleMenu() {
+            var menu = document.getElementById("menu");
+            menu.classList.toggle("active");
+        }
+    </script>
+
+</body>
+</html>

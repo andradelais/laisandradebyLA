@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Previsão do Tempo</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <div class="logo">
+            <h1>Notícias 24/7</h1>
+        </div>
+        <nav id="menu">
+            <ul>
+                <li><a href="vagas.html">Vagas de Emprego</a></li>
+                <li><a href="horoscopo.html">Horóscopo</a></li>
+                <li><a href="tempo.html">Previsão do Tempo</a></li>
+                <li><a href="esportes.html">Esportes</a></li>
+                <li><a href="assinar.html">Assinar o Jornal</a></li>
+            </ul>
+        </nav>
+        <div class="menu-icon" onclick="toggleMenu()">
+            &#9776;
+        </div>
+    </header>
+
+    <main>
+        <h2>Previsão do Tempo</h2>
+
+        <div class="search-container">
+            <input type="text" id="cityInput" placeholder="Digite o nome da cidade" />
+            <button onclick="getWeather()">Consultar</button>
+        </div>
+
+        <div id="weatherInfo" class="weather-info">
+            <h3 id="cityName"></h3>
+            <p id="temperature"></p>
+            <p id="weatherDescription"></p>
+            <p id="humidity"></p>
+        </div>
+
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Notícias 24/7 - Todos os direitos reservados.</p>
+    </footer>
+
+    <script>
+
+        function toggleMenu() {
+            var menu = document.getElementById("menu");
+            menu.classList.toggle("active");
+        }
+
+
+        function getWeather() {
+            var city = document.getElementById('cityInput').value;
+            var apiKey = 'https://api.openweathermap.org/data/2.5/weather?q={city_name}&appid={your_api_key}&units=metric&lang=pt_brs'; 
+            var url = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=metric&lang=pt_br`;
+
+            fetch(url)
+                .then(response => response.json())
+                .then(data => {
+                    if (data.cod === 200) {
+                  
+                        document.getElementById('cityName').innerText = data.name + ", " + data.sys.country;
+                        document.getElementById('temperature').innerText = `Temperatura: ${data.main.temp}°C`;
+                        document.getElementById('weatherDescription').innerText = `Condição: ${data.weather[0].description}`;
+                        document.getElementById('humidity').innerText = `Umidade: ${data.main.humidity}%`;
+                    } else {
+                        alert('Cidade não encontrada!');
+                    }
+                })
+                .catch(error => {
+                    console.error('Erro ao buscar dados da API:', error);
+                    alert('Erro ao consultar a previsão do tempo. Tente novamente.');
+                });
+        }
+    </script>
+
+</body>
+</html>

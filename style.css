@@ -1,0 +1,324 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    color: #333;
+}
+
+header {
+    background-color: #002d72; 
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+header .header-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+header h1 {
+    font-size: 2.5rem;
+}
+
+.us-flag {
+    width: 50px;
+    height: left;
+}
+
+main {
+    padding: 20px;
+}
+
+.news-list {
+    margin: 20px 0;
+}
+
+.news-list ul {
+    list-style-type: none;
+}
+
+.news-list ul li {
+    margin-bottom: 10px;
+}
+
+.news-list ul li a {
+    text-decoration: none;
+    color: #002d72;
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+.news-list ul li a:hover {
+    color: #b70000; 
+}
+
+.news-article {
+    background-color: rgb(140, 179, 223);
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.news-article h2 {
+    color: #002d72;
+}
+
+footer {
+    background-color: #b70000; 
+    color: white;
+    padding: 10px;
+    text-align: center;
+}
+
+body {
+    background-image: url('https://img.freepik.com/fotos-gratis/conceito-de-dia-da-independencia-eua-com-declaracao-antiga-e-nos-sinalizar_23-2147812711.jpg?t=st=1733231575~exp=1733235175~hmac=e9bc00f42dfd7ef168fbefbc3880c437ca00f5d498fb4fee21fe592bb53106b0&w=826'); /* URL da imagem */
+    background-size: cover;
+    background-position: left; 
+    background-repeat: no-repeat;
+    color: white;
+    height: 100vh;
+    font-family: Arial, sans-serif;
+}
+footer p {
+    font-size: 0.9rem;
+}
+
+h1 {
+    text-align: center;
+    margin-top: 20%;
+}
+nav ul {
+    display: flex;
+    list-style: none;
+    gap: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 1.1rem;
+}
+
+nav ul li a:hover {
+    color: #B70000;
+}
+
+.menu-icon {
+    display: none;
+    font-size: 2rem;
+    cursor: pointer;
+}
+
+#menu {
+    position: fixed;
+    top: 0;
+    right: -250px; 
+    width: 250px;
+    height: 100%;
+    background-color: #003366;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    transition: right 0.3s ease;
+}
+
+#menu.active {
+    right: 0;
+}
+
+#menu ul {
+    flex-direction: column;
+    text-align: center;
+}
+
+#menu ul li a {
+    padding: 15px 0;
+    font-size: 1.5rem;
+}
+
+
+@media (max-width: 768px) {
+    nav ul {
+        display: none; /
+    }
+
+    .menu-icon {
+        display: block;
+    }
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+header {
+    background-color: #003366;
+    color: white;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+}
+
+header .logo h1 {
+    font-size: 2rem;
+}
+
+
+nav ul {
+    display: flex;
+    list-style: none;
+    gap: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 1.1rem;
+}
+
+nav ul li a:hover {
+    color: #B70000;
+}
+
+.menu-icon {
+    display: none;
+    font-size: 2rem;
+    cursor: pointer;
+}
+
+main {
+    padding: 40px 20px;
+    text-align: center;
+}
+
+h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+p {
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+}
+
+.subscription-form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    max-width: 400px;
+    margin: 0 auto;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.subscription-form label {
+    font-size: 1rem;
+    text-align: left;
+}
+
+.subscription-form input {
+    padding: 10px;
+    font-size: 1rem;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.subscription-form input:focus {
+    border-color: #003366;
+}
+
+.subscription-form button {
+    padding: 10px 15px;
+    font-size: 1rem;
+    cursor: pointer;
+    background-color: #003366;
+    color: white;
+    border: none;
+    border-radius: 5px;
+}
+
+.subscription-form button:hover {
+    background-color: #B70000;
+}
+
+
+footer {
+    background-color: #B70000;
+    color: white;
+    padding: 10px;
+    text-align: center;
+}
+
+
+@media (max-width: 768px) {
+    nav ul {
+        display: none;
+    }
+
+    .menu-icon {
+        display: block;
+    }
+}
+
+ /* Estilos do menu deslizante */
+        .menu {
+            position: fixed;
+            top: 0;
+            left: -250px; /* Inicialmente oculto, à esquerda */
+            width: 250px;
+            height: 100%;
+            background-color: #003366;
+            overflow-x: hidden;
+            transition: 0.3s;
+            padding-top: 60px;
+            z-index: 1000;
+        }
+
+        .menu a {
+            padding: 8px 8px 8px 32px;
+            text-decoration: none;
+            font-size: 25px;
+            color: #ffffff;
+            display: block;
+            transition: 0.3s;
+        }
+
+        .menu a:hover {
+            color: #B70000;
+        }
+
+        .menu .close-btn {
+            position: absolute;
+            top: 0;
+            left: 20px;
+            font-size: 36px;
+            margin-left: 50px;
+            color: #ffffff;
+        }
+
+        .menu-icon {
+            display: none;
+            font-size: 2rem;
+            cursor: pointer;
+            color: #003366;
+        }
